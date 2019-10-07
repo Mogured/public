@@ -100,6 +100,7 @@ echo "----------------------------------------------------------------"
 grub2-mkconfig -o /boot/grub2/grub.cfg
 echo "----------------------------------------------------------------"
 
-echo "##press intro to continue and reboot the system##"
+echo "##press intro to delete the script and reboot the system##"
 read intro
+rm -f migration_rhel_centos.sh
 sudo init 6
